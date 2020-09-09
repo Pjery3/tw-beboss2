@@ -11,9 +11,10 @@
     padding: 0 16px;
     position: fixed;
     width: 100%;
-    z-index: 15;
+    z-index: 20;
     top: 0;
     left: 0;
+    background-color: #fff;
     &-logo {
         display: flex;
         align-items: center;
@@ -172,7 +173,7 @@
     }
 }
 
-.mainBox{
+.mainBox {
     margin-top: 56px;
 }
 .nav {
@@ -227,6 +228,165 @@
                     padding: 5px;
                 }
             }
+        }
+    }
+}
+.main-prev {
+    display: flex;
+    padding-top: 30px;
+    margin-bottom: 24px;
+    &__img {
+        &:hover {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                background: url(../images/arrow-left.svg) no-repeat center;
+                width: 60px;
+                height: 60px;
+                background-color: rgba(0, 0, 0, 0.52);
+                border-radius: 50%;
+                pointer-events: none;
+            }
+        }
+    }
+    &__text {
+        margin-left: 18px;
+    }
+    &__title {
+        span {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+.video {
+    &-title {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    &-inner {
+        display: flex;
+        .video-play {
+            margin-right: 32px;
+            max-width: 832px;
+            width: 100%;
+            position: relative;
+            video {
+                max-width: 832px;
+                width: 100%;
+            }
+            &__wrapper {
+                position: absolute;
+                content: "";
+                top: 35%;
+                right: 42%;
+                text-align: center;
+                color: #fff;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            &__text {
+                width: 115px;
+            }
+        }
+    }
+    &-vote {
+        margin-top: 16px;
+        width: 100%;
+        max-width: 256px;
+        &__title {
+            margin-bottom: 16px;
+        }
+        &__descr {
+            margin-bottom: 24px;
+        }
+        &__buttons {
+            margin-bottom: 16px;
+            .video-vote__btn {
+                position: relative;
+                margin-bottom: 8px;
+                .btn-ball-pos{
+                    position: absolute;
+                    left: 0;
+                }
+                &-ball {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    position: relative;
+                    pointer-events: none;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                    }
+                    &.btn-ball--fb {
+                        background-color: #3b5998;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 15px;
+                            height: 33px;
+                            top: 12px;
+                            right: 24px;
+                            background: url(../images/vote-fb.svg) no-repeat;
+                        }
+                    }
+                    &.btn-ball--vk {
+                        background-color: #4c6c91;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 32px;
+                            height: 18px;
+                            top: 21px;
+                            right: 16px;
+                            background: url(../images/vote-vk.svg) no-repeat;
+                        }
+                    }
+                    &.btn-ball--ok {
+                        background-color: #f68634;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 18px;
+                            height: 30px;
+                            top: 13px;
+                            right: 21px;
+                            background: url(../images/vote-ok.svg) no-repeat;
+                        }
+                    }
+                }
+                
+            }
+            button{
+              color: #fff;  
+              font-weight: 700;
+              font-size: 18px;
+              border: none;
+              padding: 18px 45px 18px 75px;
+              border-radius: 50px;
+              height: 60px;
+              cursor: pointer;
+            }
+            .btn--fb{
+                background-color: #1F3B74;
+            }
+            .btn--vk{
+                background-color: #27466A;
+            }
+            .btn--ok{
+                background-color: #D06313;
+            }
+        }
+        &__count {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
         }
     }
 }
