@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "baron": "^3.0.3",
     "browser-sync": "^2.26.10",
     "cssmin": "^0.4.3",
     "gulp": "^4.0.2",

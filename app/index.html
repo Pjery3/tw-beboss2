@@ -13,7 +13,11 @@
 
     <header class="header">
 
-
+        <div class="nav-menu__btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div class="header-logo">
             <div class="header-logo__img"><img src="images/logo.svg" alt=""></div>
             <div class="header-logo__name title">БИБОСС</div>
@@ -56,8 +60,8 @@
 
 
     <section class="mainBox">
-        <section class="nav">
-            <nav class="nav-menu">
+        <section class="nav baron baron__root baron__clipper _macosx _scrollbar">
+            <nav class="nav-menu baron__scroller">
                 <form>
                     <input type="text" placeholder="Поиск" class="nav-menu__search">
                     <button type="submit" class='nav-menu__btn'>
@@ -107,63 +111,535 @@
 
 
         <section class="main">
-            <div class="container">
 
-                <div class="main-prev">
-                    <div class="main-prev__img">
-                        <a href="#"><img src="images/main-prevbtn.png" alt=""></a>
+            <div class="main-video">
+                <div class="container">
+                    <div class="main-prev">
+                        <div class="main-prev__img">
+                            <a href="#"><img src="images/main-prevbtn.png" alt=""></a>
+                        </div>
+                        <div class="main-prev__text">
+                            <div class="main-prev__title">
+                                Конкурс БИБОСС
+                                <span>«Лучшее видео о франшизе»</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="main-prev__text">
-                        <div class="main-prev__title">
-                            Конкурс БИБОСС
-                            <span>«Лучшее видео о франшизе»</span>
+
+                    <section class="video">
+                        <div class="video-title">Видео о франшизе «Персональное решение»</div>
+                        <div class="video-inner">
+                            <div class="video-play">
+                                <video src="" poster="images/video-pict.jpg">
+                                </video>
+                                <a href="#" class="video-play__wrapper">
+                                    <div class="video-play__btn"><img src="images/play-btn.svg" alt=""></div>
+                                    <div class="video-play__text">Смотреть видео</div>
+                                </a>
+                            </div>
+                            <div class="video-vote">
+                                <div class="video-vote__title title">
+                                    Голосование
+                                </div>
+                                <div class="video-vote__descr">
+                                    Для того, чтобы проголосовать за видео, нужно сделать репост в любой из
+                                    соцсетей:
+                                </div>
+                                <div class="video-vote__buttons">
+                                    <div class="video-vote__btn">
+                                        <div class="video-vote__btn-ball btn-ball--fb btn-ball-pos"></div>
+                                        <button type="submit" class="btn--fb">Голосовать FB</button>
+                                    </div>
+                                    <div class="video-vote__btn">
+                                        <div class="video-vote__btn-ball btn-ball--vk btn-ball-pos"></div>
+                                        <button type="submit" class="btn--vk">Голосовать VK</button>
+                                    </div>
+                                    <div class="video-vote__btn">
+                                        <div class="video-vote__btn-ball btn-ball--ok btn-ball-pos"></div>
+                                        <button type="submit" class="btn--ok">Голосовать OK</button>
+                                    </div>
+                                </div>
+                                <div class="video-vote__count">
+                                    <span>657</span> голосов
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="company company-mr">
+                <div class="container">
+                    <div class="solution">
+                        <div class="solution__info">
+                            <div class="solution__img">
+                                <img src="images/solution.png" alt="">
+                            </div>
+                            <div class="solution__text">
+                                <div class="solution__text-title title">
+                                    Персональное решение
+                                </div>
+                                <div class="solution__text-descr">
+                                    Инвестиции 378 000 — 675 000 ₽
+                                </div>
+                                <div class="solution__text-link">
+                                    <a href="#">Страница франшизы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="solution-agent">
+                            <div class="solution-agent__inner">
+                                <div class="solution-agent__icon">
+                                    <img src="images/form-icon.png" alt="">
+                                </div>
+                                <div class="solution-agent__about">
+                                    <div class="solution-agent__about-name">Дмитрий Варфоломеев</div>
+                                    <div class="solution-agent__about-mem">Представитель</div>
+                                </div>
+                            </div>
+                            <div class="solution-agent__btn">
+                                <a href="#">Запросить финплан</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="company-wrapper">
+                        <div class="company-about">
+                            <div class="company-about__title title">
+                                О компании
+                            </div>
+                            <div class="company-about__text">
+                                <p>Открой СВОЙ БИЗНЕС на услугах рабочей силы и ЗАРАБАТЫВАЙ от 200 000 рублей в месяц.
+                                </p>
+                                <p>За руку доведем до 200 000 руб/ мес личного дохода, даже если это твой первый бизнес!
+                                </p>
+
+                                <p>- НАЧАТЬ ОЧЕНЬ ЛЕГКО</p>
+
+                                <p>Без найма кучи народу, закупок, оборудования и “закапывания” миллионов на годы.
+                                    Первое
+                                    время можно без офиса.</p>
+
+                            </div>
+                            <div class="company-about__link">
+                                <a href="#">Страница франшизы</a>
+                            </div>
+
+                        </div>
+                        <div class="company-stats">
+                            <div class="company-stats__title title">
+                                Показатели
+                            </div>
+                            <div class="company-stats__info">
+                                <ul class="company-stats__list">
+                                    <li>
+                                        <span>
+                                            1725
+                                        </span>
+                                        Год основания компании
+                                    </li>
+                                    <li>
+                                        <span>
+                                            1894
+                                        </span>
+                                        Год запуска франчайзинга
+                                    </li>
+                                    <li>
+                                        <span>
+                                            26 850
+                                        </span>
+                                        Франшизных предприятий
+                                    </li>
+                                    <li>
+                                        <span>
+                                            1
+                                        </span>
+                                        Собственных предприятий
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <section class="video">
-                    <div class="video-title">Видео о франшизе «Персональное решение»</div>
-                    <div class="video-inner">
-                        <div class="video-play">
-                            <video src="" poster="images/video-pict.jpg">
-                            </video>
-                            <a href="#" class="video-play__wrapper">
-                                <div class="video-play__btn"><img src="images/play-btn.svg" alt=""></div>
-                                <div class="video-play__text">Смотреть видео</div>
+
+            <section class="price">
+                <div class="container">
+                    <div class="price-inner">
+                        <div class="price-title title">
+                            Стоимость франшизы и цена владения
+                        </div>
+                        <div class="price-fee">
+                            <div class="price-fee__name price-descr__title">
+                                Вступительный взнос
+                            </div>
+                            <div class="price-fee__sum">
+                                150 000 — 400 000 ₽
+                            </div>
+                        </div>
+                        <div class="price-royalty">
+                            <div class="price-royalty__name price-descr__title">
+                                Роялти
+                            </div>
+                            <div class="price-royalty__about">
+                                5% от оборота в месяц, но не более 10 000 руб. При этом минимальная
+                                гарантированная сумма, подлежащая переводу Дилером, составляет 5 000 рублей
+                                (для городов менее 250 тысяч жителей 3 000 руб., для городов менее 100 тысяч
+                                согласовывается)
+                            </div>
+                        </div>
+                        <div class="price-current">
+                            <div class="price-current__name price-descr__title">
+                                Иные текущие платежи
+                            </div>
+                            <div class="price-current__about">
+                                Аттестация и повышение квалификации тренеров 2 000 — 5 000 рублей в год
+                            </div>
+                        </div>
+                        <div class="price-request">
+                            <a href="#">
+                                Запросить финансовый план
                             </a>
                         </div>
-                        <div class="video-vote">
-                            <div class="video-vote__title title">
-                                Голосование
-                            </div>
-                            <div class="video-vote__descr">
-                                Для того, чтобы проголосовать за видео, нужно сделать репост в любой из соцсетей:
-                            </div>
-                            <div class="video-vote__buttons">
-                                <div class="video-vote__btn">
-                                    <div class="video-vote__btn-ball btn-ball--fb btn-ball-pos"></div>
-                                    <button type="submit" class="btn--fb">Голосовать FB</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="franchises">
+                <div class="container">
+                    <div class="franchises-title title">
+                        Описание франшизы
+                    </div>
+                    <div class="franchises-descr">
+                        <p>ЧЕМ ТЫ БУДЕШЬ ЗАНИМАТЬСЯ? И КАК БУДЕШЬ ЗАРАБАТЫВАТЬ НА УСЛУГАХ РАБОЧЕЙ СИЛЫ?
+                        </p>
+                        <p>Ты будешь предоставлять рабочую силу на склады, фабрики, заводы, производства
+                            со
+                            сдельной и почасовой оплатой.</p>
+                        <p>Кто будет работать у тебя?</p>
+                        <p>• Рабочие, ищущие дополнительный заработок</p>
+                        <p>• Временно безработные люди</p>
+                    </div>
+                    <div class="franchises-link">
+                        <a href="#">
+                            Страница франшизы
+                        </a>
+                    </div>
+                    <div class="franchises-images">
+                        <img src="images/franchises-img1.jpg" alt="">
+                        <img src="images/franchises-img2.jpg" alt="">
+                        <img src="images/franchises-img3.jpg" alt="">
+                        <img src="images/franchises-img4.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="form">
+                <div class="container">
+                    <div class="form-wrapper">
+                        <div class="form-inner">
+                            <div class="form-data">
+                                <div class="form-agent">
+                                    <div class="form-agent__icon">
+                                        <img src="images/form-icon.png" alt="">
+                                    </div>
+                                    <div class="form-agent__about">
+                                        <div class="form-agent__about-name">Дмитрий Варфоломеев</div>
+                                        <div class="form-agent__about-mem">Представитель</div>
+                                    </div>
                                 </div>
-                                <div class="video-vote__btn">
-                                    <div class="video-vote__btn-ball btn-ball--vk btn-ball-pos"></div>
-                                    <button type="submit" class="btn--vk">Голосовать VK</button>
-                                </div>
-                                <div class="video-vote__btn">
-                                    <div class="video-vote__btn-ball btn-ball--ok btn-ball-pos"></div>
-                                    <button type="submit" class="btn--ok">Голосовать OK</button>
+                                <form>
+                                    <label class="icon-user-o">
+                                        <input type="text" placeholder="Ваше имя" class="form-name">
+                                    </label>
+                                    <label class="icon-envelope-o">
+                                        <input type="text" placeholder="E-mail" class="form-email">
+                                    </label>
+                                    <label class="icon-mobile2">
+                                        <input type="text" placeholder="Номер телефона" class="form-phone">
+                                    </label>
+                                    <textarea cols="30" rows="10" placeholder="Введите текст"></textarea>
+                                    <div class="form-recaptcha">
+                                        <div class="form-recaptcha__check"></div>
+                                        <div class="form-recaptcha__text">Я не робот</div>
+                                        <div class="form-recaptcha__secur-text">Проверка
+                                            безопасности</div>
+                                    </div>
+                                    <button type="submit"><span>Отправить сообщение</span> </button>
+                                </form>
+                                <div class="form-security">
+                                    <div class="form-security__icon"><img src="images/form-security.png" alt="">
+                                    </div>
+                                    <div class="form-security__text">Ваши данные в полной безопасности. Они
+                                        видны только автору объявления.</div>
                                 </div>
                             </div>
-                            <div class="video-vote__count">
-                                <span>657</span> голосов
+                            <div class="form-info">
+                                <div class="form-info__title">Что можно обсудить с представителем:</div>
+                                <ul class="form-info__list">
+                                    <li>Узнать есть ли возможность открытия в вашем городе</li>
+                                    <li>Попросить контакты уже действующих франчайзи</li>
+                                    <li>Получить шаблоны договоров для ознакомления</li>
+                                    <li>Ознакомиться с финансовым планом и этапами запуска бизнеса</li>
+                                    <li>Узнать какие гарантии может дать франшиза</li>
+                                    <li>Обсудить возможность скидки</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="members">
+                <div class="container">
+                    <div class="members-title">
+                        Другие участники конкурса
+                    </div>
+                    <div class="members-items">
+                        <div class="members-item">
+
+                            <div class="members-item__video members-item__video--tomtailor">
+                                <a href="#"><img src="images/members-item1.jpg" alt=""></a>
+                            </div>
+                            <div class="members-item-wrapper">
+                                <div class="members-item__title title">
+                                    Borodach
+                                </div>
+                                <div class="members-item__descr">
+                                    Мужские парикмехерские
+                                </div>
+                                <div class="members-item__link">
+                                    <a href="#">Смотреть и голосовать</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="members-item">
+
+                            <div class="members-item__video members-item__video--borodach">
+                                <a href="#"><img src="images/members-item2.jpg" alt=""></a>
+                            </div>
+                            <div class="members-item-wrapper">
+                                <div class="members-item__title title">
+                                    Персональное решение
+                                </div>
+                                <div class="members-item__descr">
+                                    Сеть услуг рабочей силы
+                                </div>
+                                <div class="members-item__link">
+                                    <a href="#">Смотреть и голосовать</a>
+                                </div>
                             </div>
 
                         </div>
+
+
+                        <div class="members-item">
+
+                            <div class="members-item__video members-item__video--toyru">
+                                <a href="#"><img src="images/members-item3.jpg" alt=""></a>
+                            </div>
+                            <div class="members-item-wrapper">
+                                <div class="members-item__title title">
+                                    TOY.RU
+                                </div>
+                                <div class="members-item__descr">
+                                    Магазин детских игрушек
+                                </div>
+                                <div class="members-item__link">
+                                    <a href="#">Смотреть и голосовать</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </div>
+                    <div class="members-btn">
+                        <a href="#">Все участники конкурса</a>
+                    </div>
+                </div>
+            </section>
+
         </section>
 
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-logo title">
+                    <a href="#"><img src="images/logo.svg" alt=""></a>
+                    <a href="#" class='logo-beboss--white'>БИБОСС</a>
+                    <span class="footer-control">Управление</span>
+                </div>
+
+                <div class="footer-inner">
+                    <div class="footer__col">
+                        <div class="footer__col-title footer-title">РАЗДЕЛЫ</div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#" class="footer-icons-1 footer-icons">Сообщество</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-icons-2 footer-icons">Коммерческая недвижимость</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-icons-3 footer-icons">Франшизы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-icons-4 footer-icons">Готовый бизнес</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-icons-5 footer-icons">Товары для бизнеса</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-icons-6 footer-icons">Инвестпроекты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-icons-7 footer-icons">Бизнес-идеи</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-icons-8 footer-icons">Бизнес-планы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-icons-9 footer-icons">Заявки</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer__col footer__col-menu">
+                        <div class="footer__col-title footer-title">ПРОЕКТЫ</div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#">Бизнес-журнал</a>
+                            </li>
+                            <li>
+                                <a href="#">Календарь мероприятий</a>
+                            </li>
+                            <li>
+                                <a href="#">Рейтинг франшиз</a>
+                            </li>
+                            <li>
+                                <a href="#">Франчайзинговая прмия</a>
+                            </li>
+                            <li>
+                                <a href="#">Мисс франчайзинг 2019</a>
+                            </li>
+                            <li>
+                                <a href="#">Рейтинг торговых центров</a>
+                            </li>
+                            <li>
+                                <a href="#">Как начать бизнес</a>
+                            </li>
+                            <li>
+                                <a href="#">Карта МСП</a>
+                            </li>
+                            <li>
+                                <a href="#">Мобильные приложения</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col footer__col-menu">
+                        <div class="footer__col-title footer-title">БИБОСС</div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#">О портале</a>
+                            </li>
+                            <li>
+                                <a href="#">Статьи пользователей</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы о нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Рекламные услуги</a>
+                            </li>
+                            <li>
+                                <a href="#">Работа у нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Книги</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">Служба поддержки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col footer__col-social">
+                        <div class="footer__col-title footer-title">СОЦСЕТИ</div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#" class="facebook-icon footer-icons">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#" class="vk-icon footer-icons">Вконтакте</a>
+                            </li>
+                            <li>
+                                <a href="#" class="telegram-icon footer-icons">Телеграм</a>
+                            </li>
+                            <li>
+                                <a href="#" class="instagram-icon footer-icons">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#" class="youtube-icon footer-icons">Youtube</a>
+                            </li>
+                            <li>
+                                <a href="#" class="ok-icon footer-icons">Одноклассники</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-socialnetworks">
+                    <div class="footer-socialnetworks__fb"><a href=""><img src="images/fb-footer.svg" alt=""></a>
+                    </div>
+                    <div class="footer-socialnetworks__vk"><a href=""><img src="images/vk-footer.svg" alt=""></a>
+                    </div>
+                    <div class="footer-socialnetworks__telegram"><a href=""><img src="images/telegram.svg" alt=""></a>
+                    </div>
+                    <div class="footer-socialnetworks__instagram"><a href=""><img src="images/instagram.svg" alt=""></a>
+                    </div>
+                    <div class="footer-socialnetworks__youtube"><a href=""><img src="images/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-country">
+                    <div class="footer-country-inner">
+                        <div class="footer-country__text footer-title">
+                            ДРУГИЕ СТРАНЫ
+                        </div>
+                        <div class="footer-country__ukr footer-country-all">
+                            <a href="#">
+                                <img src="images/ua.png" alt="">
+                                <span>Украина</span>
+                            </a>
+                        </div>
+                        <div class="footer-country__kz footer-country-all">
+                            <a href="#">
+                                <img src="images/kz.png" alt="">
+                                <span>Казахстан</span>
+                            </a>
+                        </div>
+                        <div class="footer-country__blr footer-country-all">
+                            <a href="#">
+                                <img src="images/blr.png" alt="">
+                                <span>Белоруссия</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-country__stats">
+                        <span>© БИБОСС 2006-2018</span>
+                        <a href="#"><img src="images/footer-stats.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

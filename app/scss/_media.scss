@@ -1,0 +1,189 @@
+@media (max-width: 1840px) and (min-width: 1381px) {
+    .main {
+        margin-left: 320px;
+    }
+    .footer {
+        margin-left: 320px;
+    }
+}
+@media (max-width: 1570px) {
+    .container {
+        padding: 0 15px;
+    }
+    .video-title {
+        font-size: 46px;
+    }
+}
+@media (max-width: 1380px) {
+    .main {
+        padding-left: 112px;
+    }
+    .footer {
+        padding-left: 112px;
+    }
+
+    .nav {
+        background-color: #fff;
+        max-width: 66px;
+        width: 100%;
+        &-menu {
+            form {
+                display: none;
+            }
+
+            &__list {
+                li {
+                    height: 20px;
+                    margin-bottom: 25px;
+                    a {
+                        display: none;
+                    }
+                }
+            }
+            &__btn {
+                display: block;
+            }
+        }
+        &:hover {
+            max-width: 305px;
+            width: 100%;
+            z-index: 10;
+            height: 100%;
+            transition: max-width 0.2s linear;
+            .nav-menu__list {
+                li {
+                    a {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.clicked {
+            max-width: 305px;
+            width: 100%;
+            z-index: 10;
+            height: 100%;
+            padding: 8px;
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            transition: max-width 0.2s linear;
+            .nav-menu__list {
+                li {
+                    a {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .header-logo {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1410px) {
+    .video-title {
+        font-size: 43px;
+    }
+}
+
+@media (max-width: 1135px) {
+    .video-title {
+        font-size: 37px;
+    }
+    .footer__col-social {
+        display: none;
+    }
+    .footer-socialnetworks {
+        display: flex;
+    }
+    .video-vote__buttons button {
+        padding: 18px 10px 18px 65px;
+    }
+    .company-mr{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 1030px) {
+    .video-inner .video-play__wrapper {
+        top: 27%;
+        right: 39%;
+    }
+    
+}
+
+@media (max-width: 1005px) {
+    .video-title {
+        font-size: 32px;
+    }
+    .franchises-images img {
+        max-width: 160px;
+    }
+}
+@media (max-width: 930px) {
+    .header-city {
+        display: none;
+    }
+    .main {
+        padding-left: 65px;
+    }
+    .footer {
+        padding-left: 65px;
+    }
+}
+@media (max-width: 865px) {
+    .nav {
+        border: 0;
+        padding: 0;
+        max-width: 0;
+    }
+    .main {
+        padding-left: 0px;
+    }
+    .footer {
+        padding-left: 0px;
+    }
+    .video-vote {
+        max-width: 215px;
+    }
+}
+@media (max-width: 800px) {
+    .video-title {
+        font-size: 27px;
+    }
+    .video-inner {
+        display: block;
+    }
+    .company-mr{
+        margin-top: 30px;
+    }
+    .title{
+        font-size: 21px;
+    }
+    .video {
+        padding-bottom: 30px;
+        &-vote{
+            max-width: 800px;
+            text-align: center;
+            &__buttons{
+                display: flex;
+                justify-content: space-between;
+                button{
+                    padding: 18px 24px 18px 70px;
+                    
+                }
+            }
+        }
+    }
+    .video-inner .video-play__wrapper {
+        top: 35%;
+    }
+
+}
+@media (max-width: 930px) {
+}
+@media (max-width: 930px) {
+}
+@media (max-width: 930px) {
+}
+@media (max-width: 930px) {
+}

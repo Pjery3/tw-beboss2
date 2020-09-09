@@ -25,6 +25,7 @@ a {
     margin: 0 auto;
     padding: 0 5px;
 }
+
 ul,
 li{
     list-style: none;
@@ -36,4 +37,11 @@ li{
 .title{
     font-size: 24px;
     font-weight: 700;
+}
+
+.footer-title{
+    font-size: 14px;
+    font-weight: 700;
+    opacity: .6;
+    color: #fff;
 }
